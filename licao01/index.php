@@ -81,6 +81,7 @@ function garrafa($nivel)
   return ($nivel) ? true : false;
 }
 
+//pergunto a idade
 echo 'Segurança: Qual a sua idade?<br>';
 echo 'Convidado: '.$pessoa['idade'].' anos.<br>';
 //verifico se o convidado pode entrar.(Já verifico a idade e se é amigo do dono da festa)
@@ -104,7 +105,9 @@ if($decisao_do_seguranca){
   {
     //se tem amigo na festa e o genero
     $genero_amigo = ($amigo['genero']) ? 'FulanA' : 'FulanO';
-    echo (amigo_na_festa($amigo['festa'])) ? 'Convidado: Olá '.$genero_amigo.'!<br>' : 'Convidado: Não conheço ninguem na festa.';
-    
+    echo (amigo_na_festa($amigo['festa'])) ? 'Convidado: Olá '.$genero_amigo.'!<br>' : 'Convidado: Não conheço ninguem na festa.<br>';
+
+    //coca Cola
+    echo (coca($cardapio['tipo'])) ? 'Convidado: Quero beber Coca cola light!<br>' : 'Convidado: Quero beber Coca cola!<br>';
   }
 }
